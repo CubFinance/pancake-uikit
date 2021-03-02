@@ -4,21 +4,17 @@ import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         viewBox="0 0 640 701.07">
+    <Svg viewBox="0 0 640 701.07" {...props}>
       <defs>
-        <style>.cls-1{fill:#070707;}.cls-2{fill:#2e2e2e;}.cls-3{fill:#fff;opacity:0.05;}.cls-4{fill:url(#linear-gradient);}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:url(#linear-gradient-3);}.cls-7{fill:url(#linear-gradient-4);}</style>
+        <style>{`.cls-1{fill:#070707;}.cls-2{fill:#2e2e2e;}.cls-3{fill:#fff;opacity:0.05;}.cls-4{fill:url(#linear-gradient);}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:url(#linear-gradient-3);}.cls-7{fill:url(#linear-gradient-4);}`}</style>
         <linearGradient id="linear-gradient" x1="117.3" y1="452.72" x2="595.64" y2="126.99"
                         gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#00e1ff" />
-          <stop offset="1" stop-color="#007aff" />
+          <stop offset="0" stopColor="#00e1ff" />
+          <stop offset="1" stopColor="#007aff" />
         </linearGradient>
-        <linearGradient id="linear-gradient-2" x1="155.53" y1="508.85" x2="633.86" y2="183.12"
-                        xlink:href="#linear-gradient" />
-        <linearGradient id="linear-gradient-3" x1="109.05" y1="440.6" x2="587.38" y2="114.87"
-                        xlink:href="#linear-gradient" />
-        <linearGradient id="linear-gradient-4" x1="174.09" y1="536.11" x2="652.42" y2="210.38"
-                        xlink:href="#linear-gradient" />
+        <linearGradient id="linear-gradient-2" x1="155.53" y1="508.85" x2="633.86" y2="183.12" />
+        <linearGradient id="linear-gradient-3" x1="109.05" y1="440.6" x2="587.38" y2="114.87" />
+        <linearGradient id="linear-gradient-4" x1="174.09" y1="536.11" x2="652.42" y2="210.38" />
       </defs>
       <title>lionfinance</title>
       <path className="cls-1"
@@ -35,7 +31,7 @@ const Icon: React.FC<SvgProps> = (props) => {
             d="M227,306.92c6.16,0,12.33-.15,18.49,0,21.21.63,37.56,16.11,38.56,37.28.66,13.84.08,27.74.27,41.6.07,5.6-2.46,8.05-7.83,7.53-7.6-.74-16.88,3.68-21.41-7.22-.54-1.3-5.11-1.18-7.83-1.28-25.62-1-39.84-15.5-41.2-41.33-.2-3.76-4.53-7.17-5.34-11.07a97.11,97.11,0,0,1-2.12-22c0-1.27,6.38-3.06,9.93-3.39C214.67,306.51,220.87,306.91,227,306.92Zm30.31,43.13c0-12-4.49-16.56-15.3-17-6.39-.25-9.72,1.66-9.58,8.77.23,11.23,5.12,16.33,16.14,16.72C255.56,358.81,258.29,356,257.35,350.05Z" />
       <path className="cls-7"
             d="M367.3,436.34c-.92,1.62-2.05,5.5-4.61,7.75-10.89,9.52-22,18.79-33.41,27.7-7.29,5.7-14.77,5-21.83-1.19-9.26-8.14-18.8-16-28-24.17-5.18-4.59-8.13-10.37-5.33-17.35,2.55-6.36,8.18-7.73,14.46-7.72,21,0,42-.15,62.94,0C361.49,421.44,367.46,426.61,367.3,436.34Z" />
-    </svg>
+    </Svg>
   );
 };
 
